@@ -1,86 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Elva und Lenny</title>
     <style>
         @font-face {
             font-family: "Apple Garamond";
             src: url("AppleGaramond.ttf") format("truetype");
         }
+
         body {
             margin: 0;
+            padding: 0 16px;
+            box-sizing: border-box;
             background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             line-height: 1.6;
-            
             color: #00ad5f;
             font-family: sans-serif;
             text-align: center;
         }
-        
+
         h1 {
             font-family: "Apple Garamond", Garamond, serif;
-            font-size: 58px;
-            color: #00ad5f;
+            font-size: clamp(36px, 10vw, 58px);
+            color: #008f4e;
             font-weight: 400;
             line-height: 1.0;
         }
-        
-        h2,summary {
+
+        h2 {
+            color: #008f4e;
             font-family: sans-serif;
-            font-size: 30px;
-            margin-top: 0;
+            font-size: clamp(20px, 5vw, 30px);
+            margin-top: 1.4em;
             margin-bottom: 0.1em;
         }
-        
+
         b {
             font-weight: 700;
         }
-        
+
         p {
             font-family: sans-serif;
-            font-size: 20px;
+            font-size: clamp(15px, 3.5vw, 20px);
             margin-top: 0;
             margin-bottom: 0.5em;
-            
             max-width: 500px;
         }
-        
+
         .main-image {
+            width: 100%;
             max-width: 400px;
+            height: auto;
             border-radius: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.08);
+            display: block;
+            margin: 0.6em 0 1.4em;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Elva und Lenny <br>&#x2665; </h1>
+    <h1>Elva und Lenny <br>&#x2665;</h1>
     <img class="main-image" src="elva-und-lenny-süß.jpg" alt="Die beiden beim Altschauerberg.">
-    <h2> Wann? </h2>
-    <p> <b>Beginn:</b> Samstag, 12.12.2026 ab 15 Uhr</p>
-    <p> <b>Ende:</b> Sonntag 13.12.2026 um 12 Uhr</p>
-    <h2> Wo? </h2>
-    <p> 
-    Verein Deutscher Studenten <br>
-    Plöck 68, 69117 Heidelberg
+    <h2>Wann?</h2>
+    <p><b>Beginn:</b> Samstag, 12.12.2026 ab 15 Uhr</p>
+    <p><b>Ende:</b> Sonntag 13.12.2026 um 12 Uhr</p>
+    <h2>Wo?</h2>
+    <p>
+        Verein Deutscher Studenten <br>
+        Plöck 68, 69117 Heidelberg
     </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.9373068675472!2d8.702518711151392!3d49.41009126160567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c1fe397181e3%3A0x92d31956ef90d7ee!2sP11%20Parkhaus%20Universit%C3%A4ts%20Bibliothek!5e0!3m2!1sen!2sde!4v1774300187756!5m2!1sen!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <h2> Wie? </h2>
-    <p> Die nächstgelegene Haltestelle zur Verbindung VDSt ist Peterskirche - von dort erreicht ihr das Haus bequem zu Fuß in wenigen Minuten. </p>
-    <p> Vom Heidelberger Hauptbahnhof kommt ihr mit der Buslinie 31 oder 33 (nach Peterskirche Heidelberg) direkt bis kurz vor das Haus </p>
-    <p> Wenn ihr mit dem Auto kommt, ist das nächste Parkhaus das Unibibliotheksparkhaus. </p>
-    <h2> Kontakt </h2>
-    <p> Ihr könnt uns jederzeit schreiben, unsere Nummern habt ihr ja.
-    </p>
-
-    
-    
-
-    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.9373068675472!2d8.702518711151392!3d49.41009126160567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c1fe397181e3%3A0x92d31956ef90d7ee!2sP11%20Parkhaus%20Universit%C3%A4ts%20Bibliothek!5e0!3m2!1sen!2sde!4v1774300187756!5m2!1sen!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Wie?</h2>
+    <p>Die nächstgelegene Haltestelle zur Verbindung VDSt ist Peterskirche - von dort erreicht ihr das Haus bequem zu Fuß in wenigen Minuten.</p>
+    <p>Vom Heidelberger Hauptbahnhof kommt ihr mit der Buslinie 31 oder 33 (nach Peterskirche Heidelberg) direkt bis kurz vor das Haus.</p>
+    <p>Wenn ihr mit dem Auto kommt, ist das nächste Parkhaus das Unibibliotheksparkhaus.</p>
+    <h2>Kontakt</h2>
+    <p>Ihr könnt uns jederzeit schreiben, unsere Nummern habt ihr ja.</p>
 </body>
 </html>
