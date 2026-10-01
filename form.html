@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(127, 117, 61)">
+    <title>Elva und Lenny: Hochzeitsanmeldung</title>
+    <style>
+        @font-face {
+            font-family: "Apple Garamond";
+            src: url("AppleGaramond.ttf") format("truetype");
+        }
+
+        :root {
+            /* Background of the Google Form; the header blends into it.
+               Replace with the exact hex if it differs (eyedropper on the live form). */
+            --form-bg: rgb(217, 214, 197);
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background-color: var(--form-bg);
+            color: #00ad5f;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        header {
+            flex: 0 0 auto;
+            padding: 16px 16px 0;
+        }
+
+        h1 {
+            font-family: "Apple Garamond", Garamond, serif;
+            font-size: clamp(28px, 7vw, 42px);
+            color: #008f4e;
+            font-weight: 400;
+            line-height: 1.0;
+            margin: 0.2em 0 0.3em;
+        }
+
+        p {
+            font-size: clamp(14px, 3vw, 17px);
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        iframe {
+            flex: 1 1 auto;
+            width: 100%;
+            min-height: 0;
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elva und Lenny <br>&#x2665;</h1>
+        <p>Meldet euch hier für die Feier an.</p>
+        <a href="/">⬅️zurück</a>
+    </header>
+    <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf-dix6U7zwkzl7syLmfQRlHJqOs9jSfKLb3lDqlIZ_oKybQA/viewform"
+        title="Hochzeitsanmeldung">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-dix6U7zwkzl7syLmfQRlHJqOs9jSfKLb3lDqlIZ_oKybQA/viewform">Zum Anmeldeformular</a>
+    </iframe>
+</body>
+</html>
